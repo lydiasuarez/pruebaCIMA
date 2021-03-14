@@ -62,7 +62,7 @@ bowtie2-build -f Homo_sapiens.GRCh38.fa ihg38
 
 Ello produce como salida archivos con extensión .bt2, que contienen las secuencias de referencia contra las que seran alineadas nuestros fragmentos. 
 
-### 2.2 Alienamiento.
+### 2.2 Alineamiento.
 
 Usamos el software TopHat2, que incluye una herramienta para la búsqueda de transcritos quiméricos ("--fusion-search"). Especificamos el genoma de referencia anotado (.gtf), el directorio donde TopHat2 guardará los resultados ("./aligment_output") y las lecturas de ambos sentidos (R1.fastq y R2.fastq).
 
@@ -71,7 +71,7 @@ tophat -G ./hg38.gtf -o ./aligment_output ./ihg38 ./Sample1.R1.fastq ./Sample1.R
 ```
 De entre todos los archivos generados, podemos echar un vistazo al archivo fusion.out para encontrar los posibles transcritos quiméricos.
 
-### 3. Filtrado de transcritos
+### 3. Filtrado de transcritos.
 
 Si se desea, posteriormente, se puede usar TopHat-fusion-post para filtrar transcritos quiméricos(del total de candidatos generados en el paso anterior). Es aconsejable repetir este proceso con distintos parámetros de filtrado. Lanzamos este comando en el directorio de salida de TopHat2:
 
