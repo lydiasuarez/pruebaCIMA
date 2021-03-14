@@ -119,7 +119,7 @@ En la representación gráfica de nuestro PCA podemos observar como hay una agru
 ![ ](../plot_pca_allgenes.jpeg)
 
 
-#### 3.1. Selección de genes.
+### 3.1. Selección de genes.
 
 Dada la gran cantidad de genes vamos a seleccionar un determinado número de genes, aquellos que presentan mayor expresión diferencial (DE) entre las muestras sanas y las muestras con cáncer. Para ello, la plataforma TCGA proporciona una serie de comandos que se han encapsulado en una única función. Dicha función requiere de dos argumentos; la matriz con los datos de expresión de cada gen para cada muestra y el número de genes deseados con mayor DE, en este caso, se han seleccionado 50 genes. 
 
@@ -234,7 +234,7 @@ ctrl <- trainControl(method = "repeatedcv",
 
 A continuación se muestran los comandos utilizados para realizar cada modelo.
 
-#### 4.1. Generalized Linear Model (GLM) 
+### 4.1. Generalized Linear Model (GLM) 
 
 ```r
 LIHC.glmtrain.fit.rds<-train(data.train[variables_input],
@@ -246,7 +246,7 @@ LIHC.glmtrain.fit.rds<-train(data.train[variables_input],
                                 
 ```
 
-#### 4.1. Random Forest (RF) 
+### 4.1. Random Forest (RF) 
 
 ```r
 
@@ -264,7 +264,7 @@ LIHC.rftrain.fit.rds<-train(data.train[variables_input],
 
 ```
 
-#### 4.1. K-Nearest Neighbors (K-NN) (modelo a mi elección)
+### 4.1. K-Nearest Neighbors (K-NN) (modelo a mi elección)
 
 ```r
 LIHC.knnrain.fit.rds<-train(data.train[variables_input],
@@ -274,7 +274,7 @@ LIHC.knnrain.fit.rds<-train(data.train[variables_input],
                             preProcess = c("center", "scale"))
 
 ```
-#### 4.1. Neural Network (NN) 
+### 4.1. Neural Network (NN) 
 
 ```r
 
