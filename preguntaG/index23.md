@@ -10,13 +10,13 @@ nav_order: 3
 
 ## Explique paso a paso el análisis de expresión diferencial de un RNAseq a partir de fastqs mencionando los programas que utilizara (los comando puede añadirlos si así lo desea) y comentando en que consta cada paso hasta obtener genes diferencialmente expresados.
 
-Existen diversas estrategias para la ejecución de un análisis de expresión diferencial. En este caso, se usará el protocolo Tuxedo, ampliamente utilizado en los últimos años. Este consta de 3 grandes pasos*:
+Existen diversas estrategias para la ejecución de un análisis de expresión diferencial. En este caso, se usará el protocolo Tuxedo, ampliamente utilizado en los últimos años. Este consta de 3 grandes pasos <sup>*</sup>:
 
 - Ensamblado del transcriptoma.
 - Cuantificación de la expresión de cada gen.
 - Comparativa de la expresión.
  
-*Precedidos por el análisis de calidad de las lecturas obtenidas, explicado en el apartado A.
+<sup>*</sup>Precedidos por el análisis de calidad de las lecturas obtenidas, explicado en el apartado A.
 
 ### 1. Ensamblado del transcriptoma: Cufflinks
 
@@ -35,3 +35,5 @@ Por otro lado, existen alternativas que han ganado gran relevancia en los últim
 Una vez obtenidos los genes mas relevantes, con una expresión destacable, conviene realizar un análisis funcional(análisis de enriquecimiento) para detectar las funciones en las que están implicados y, poder así contextualizar mejor las diferencias observadas.
 
 ![image](./tuxedo_workflow.png)
+
+<sup>1</sup> Protocolo Tuxedo.
