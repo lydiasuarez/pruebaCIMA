@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Pregunta crítica
+title: Pregunta Crítica
 nav_order: 5
 ---
 
