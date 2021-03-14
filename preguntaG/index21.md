@@ -16,7 +16,7 @@ nav_order: 1
 Comenzamos el pipeline con la evaluación de la calidad de los datos obtenidos a través de la secuenciación. Para ello, primero se hace uso de ciertas herramientas que permiten observar la calidad de los fragmentos secuenciados, asi como la posible modificación de los mismos, con el objetivo de preservar únicamente aquella información con la suficiente calidad / veracidad.
 
 
-#### 1.1 Quality assessment.
+### 1.1 Quality assessment.
 
 
 FastQC es una herramienta que permite generar gran cantidad de gráficos que ilustran la calidad de las lecturas obtenidas, lo que en definitiva transmite información acerca de la veracidad de las mismas. Entre estas gráficas, encontramos: calidad de lectura de los fragmentos por cada base secuenciada, distribución de la calidad media de los fragmentos, contenido GC, número de no lecturas (N), distribución de la longitud de las lecturas, número de lecturas duplicadas o sobrerrepresentadas (i.e adaptadores) entre otras.
@@ -28,7 +28,7 @@ Ejemplo:
 ![imagen](./fastqc.png)
 
 
-#### 1.2 Filtering y Trimming.
+### 1.2 Filtering y Trimming.
 
 
 En caso de que se observaran anomalías o problemas de calidad en las lecturas, se puede recurrir a herramientas como CutAdapt o FastQ Trimmer, que posibilitan modificarlas, excluyendo aquellas regiones o lecturas que no interesan. Estas técnicas pueden incluir el descarte de todas aquellas lecturas por debajo de un umbral de calidad determinado, la eliminación de secuencias como los adaptadores(secuencias sobrerrepresentadas que no interesan), o la acortación de estas para retener únicamente las secciones por encima de dicho límite de calidad.
@@ -52,7 +52,7 @@ cutadapt -a ADAPTER_FWD -A ADAPTER_REV -o out.1.fastq -p out.2.fastq reads.1.fas
 
 El siguiente paso consiste en el alineamiento de los fragmentos secuenciados con el genoma de referencia. Para ello, no se puede utilizar un alineador tradicional, dado que los intrones harían muy difícil el proceso al introducir sesgos en el genoma. Hay una serie de programas especializados en RNA seq, como TopHat2, que parte del alineador Bowtie para posteriormente considerar los intrones en el proceso. 
 
-#### 2.1 Indexar genoma de referencia.
+### 2.1 Indexar genoma de referencia.
 
 Es un proceso necesario para que Bowtie acceda de forma rápida al genoma de referencia. Para realizarlo, introducimos el siguiente comenado:
 
@@ -62,7 +62,7 @@ bowtie2-build -f Homo_sapiens.GRCh38.fa ihg38
 
 Ello produce como salida archivos con extensión .bt2, que contienen las secuencias de referencia contra las que seran alineadas nuestros fragmentos. 
 
-#### 2.2 Alienamiento.
+### 2.2 Alienamiento.
 
 Usamos el software TopHat2, que incluye una herramienta para la búsqueda de transcritos quiméricos ("--fusion-search"). Especificamos el genoma de referencia anotado (.gtf), el directorio donde TopHat2 guardará los resultados ("./aligment_output") y las lecturas de ambos sentidos (R1.fastq y R2.fastq).
 
