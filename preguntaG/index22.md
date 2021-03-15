@@ -31,11 +31,11 @@ theme(legend.position = c(0.92, 0.15),
 
 El resultado se puede ver en las siguientes imágenes:
 
-![image](./xbp1.jpg)
+![image](./XBP1.jpg)
 
 ![image](./ATF6.jpg)
 
-![image](./cd36.jpg)
+![image](./CD36.jpg)
 
 ### 2. Experimentos GSE11536 y GSE154964.
 
