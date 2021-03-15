@@ -54,7 +54,7 @@ El siguiente paso consiste en el alineamiento de los fragmentos secuenciados con
 
 ### 2.1 Indexar genoma de referencia.
 
-Es un proceso necesario para que Bowtie acceda de forma rápida al genoma de referencia. Para realizarlo, introducimos el siguiente comenado:
+Es un proceso necesario para que Bowtie acceda de forma rápida al genoma de referencia. Para realizarlo, introducimos el siguiente comando:
 
 ```bash
 bowtie2-build -f Homo_sapiens.GRCh38.fa ihg38
