@@ -33,9 +33,17 @@ El resultado se puede ver en las siguientes imágenes:
 
 ![image](./XBP1.jpg)
 
+<sup>1</sup> Expresión del gen XBP1.
+
+
 ![image](./ATF6.jpg)
 
+<sup>2</sup> Expresión del gen XBP1.
+
+
 ![image](./CD36.jpg)
+
+<sup>3</sup> Expresión del gen XBP1.
 
 ### 2. Experimentos GSE11536 y GSE154964.
 
