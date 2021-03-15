@@ -32,18 +32,15 @@ theme(legend.position = c(0.92, 0.15),
 El resultado se puede ver en las siguientes imágenes:
 
 ![image](./XBP1.jpg)
-
 <sup>1</sup> Expresión del gen XBP1.
 
 
 ![image](./ATF6.jpg)
-
-<sup>2</sup> Expresión del gen XBP1.
+<sup>2</sup> Expresión del gen ATF6.
 
 
 ![image](./CD36.jpg)
-
-<sup>3</sup> Expresión del gen XBP1.
+<sup>3</sup> Expresión del gen CD36.
 
 ### 2. Experimentos GSE11536 y GSE154964.
 
