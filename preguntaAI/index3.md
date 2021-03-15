@@ -11,9 +11,9 @@ nav_order: 2
 Las librerias que he necesitado para realizar esta pregunta en R han sido:
 
 ```r
-library(TCGAbiolinks)
-library(EDASeq)
-library(caret)
+library("TCGAbiolinks")
+library("EDASeq")
+library("caret")
 ```
 
 ### 2. Obtención de datos.
