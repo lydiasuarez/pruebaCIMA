@@ -22,9 +22,9 @@ Existen diversas estrategias para la ejecución de un análisis de expresión di
 
 El primer paso consiste en el alineamiento de los fragmentos con el genoma de referencia, lo que permitirá obtener el número y la procedencia de los transcritos secuenciados. Para ello hacemos uso de nuevo de TopHat2. Tras ello, ejecutamos Cufflinks, que trata de construir transcritos a partir de las lecturas.
 
-### 2. Cuantificación de la expresión: Cuffdiff
+### 2. Cuantificación de la expresión: Cuffquant
 
-Cuffdiff trata de cuantificar la expresión de los genes/transcritos detectados, en función del número de fragmentos que alinean con los mismos. El resultado da lugar a archivos _CBX_ en donde encontramos los transcritos detectados y su expresión no normalizada.
+Cuffquant trata de cuantificar la expresión de los genes/transcritos detectados, en función del número de fragmentos que alinean con los mismos. El resultado da lugar a archivos _CXB_ en donde encontramos los transcritos detectados y su expresión no normalizada.
 
 ### 3. Comparativa de la expresión 
 
