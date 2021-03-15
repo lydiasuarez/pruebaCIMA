@@ -9,15 +9,18 @@ nav_order: 2
 ### 1. Librerias.
 
 Las librerias que he necesitado para realizar esta pregunta en R han sido:
+
 ```r
 library(TCGAbiolinks)
 library(EDASeq)
 library(caret)
 ```
+
 ### 2. Obtención de datos.
 Desde el recurso TCGA web nos permiten descargar los datos de expresión RNAseq del estudio LIHC de muestras de células tumorales. Además, también podemos obtener los datos de expresión de genes en zonas del hígado con células sanas. Esto lo utilizaremos para crear la matriz con para predecir cancer/nocancer en base al perfil transcriptómico de cada muestra. 
 
 Para ello, se ha creado una función que engloba todos los pasos que nos falicita TCGA para obtener los datos. Dicha función requiere de dos argumentos; el nombre del proyecto en la base de datos de TCGA(TCGA-LICH) y una lista con el barcode de todas las muestras. Esta última la he obtenido del [proyecto TCGA-LIHC](https://portal.gdc.cancer.gov/projects/TCGA-LIHC) en el portal GDC.
+
 ```r 
 datos_TCGA_rnaseq<- function(_estudio_,_list.barcode.samples_){
     
